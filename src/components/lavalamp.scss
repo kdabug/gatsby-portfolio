@@ -1,0 +1,177 @@
+$lavacolor: aquamarine;
+$lavablur: 3px;
+/*various blob speeds*/
+$fast: 9s;
+$med: 12s;
+$slow: 15s;
+
+html {
+  background: black;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.container {
+  margin: auto;
+  transform: scale(1.5);
+}
+.top .wrapper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-left: 150px;
+}
+.upperBase .wrapper {
+  width: 143px;
+  height: 100px;
+  position: relative;
+  margin-left: 128px;
+  transform: rotateY(180deg);
+  top: 38px;
+}
+.lowerBase .wrapper {
+  width: 130px;
+  height: 50px;
+  position: relative;
+  margin-left: 135px;
+  transform: rotateY(180deg);
+  top: 17px;
+}
+@mixin trap {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  position: absolute;
+}
+.lowerBase .base {
+  @include trap;
+  background: linear-gradient(
+    to right,
+    #636363 0%,
+    #969696 24%,
+    #969696 24%,
+    #adadad 50%,
+    #5b5b5b 100%
+  );
+  transform: perspective(2px) rotateX(1deg);
+}
+.upperBase .base {
+  @include trap;
+  background: linear-gradient(
+    to right,
+    #6c6c6c 0%,
+    #a5a5a5 24%,
+    #a5a5a5 24%,
+    #bebebe 50%,
+    #636363 100%
+  );
+  transform: perspective(65px) rotateX(-25deg);
+}
+.cap {
+  @include trap;
+  background: linear-gradient(
+    to right,
+    #9f9f9f 0%,
+    #d8d8d8 24%,
+    #d8d8d8 24%,
+    #f1f1f1 50%,
+    #969696 100%
+  );
+  transform: perspective(4px) rotateX(1deg);
+}
+.mid .wrapper {
+  width: 158px;
+  height: 200px;
+  position: relative;
+  left: 121px;
+  top: -12px;
+}
+.glass {
+  @include trap;
+  background: darken(hotpink, 20%);
+  transform: perspective(7px) rotateX(1deg);
+  filter: contrast(18);
+  overflow: hidden;
+}
+
+.goop {
+  background: $lavacolor;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur($lavablur);
+}
+.top-goop {
+  top: -25px;
+}
+.bot-goop {
+  bottom: -25px;
+}
+.blob {
+  border-radius: 50%;
+  position: absolute;
+  background: $lavacolor;
+  filter: blur($lavablur);
+}
+
+@mixin blobanimator($anim, $dur) {
+  animation: $anim $dur infinite ease-in;
+}
+.blob:nth-of-type(1) {
+  height: 80px;
+  width: 80px;
+  @include blobanimator(from-bottom, $fast);
+}
+.blob:nth-of-type(2) {
+  width: 80px;
+  height: 80px;
+  left: 50px;
+  @include blobanimator(from-bottom, $med);
+  animation-delay: 1s;
+  bottom: -40px;
+}
+.blob:nth-of-type(3) {
+  height: 70px;
+  width: 60px;
+  right: 30px;
+  @include blobanimator(from-top, $slow);
+  top: -80px;
+}
+.blob:nth-of-type(4) {
+  height: 40px;
+  width: 40px;
+  left: 50px;
+  @include blobanimator(from-top, $med);
+  top: -80px;
+  animation-delay: 3s;
+}
+.blob:nth-of-type(5) {
+  height: 90px;
+  width: 90px;
+  left: -15px;
+  @include blobanimator(from-bottom, $slow);
+  bottom: -80px;
+  animation-delay: 3s;
+}
+@keyframes from-bottom {
+  0% {
+    bottom: -80px;
+  }
+  100% {
+    bottom: 200px;
+  }
+}
+@keyframes from-top {
+  0% {
+    top: -80px;
+  }
+  100% {
+    top: 200px;
+  }
+}
