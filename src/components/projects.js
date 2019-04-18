@@ -1,6 +1,6 @@
 import React from "react"
 import "./contacts.css"
-import contactList from "../data/contacts.json"
+import contactList from "../data/contacts.js"
 
 const Contacts = () => {
   return (

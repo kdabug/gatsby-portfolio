@@ -72,9 +72,20 @@ const Credits = () => (
             1001 Fonts - humbertogillan94
           </a>
         </li>
+        <li>
+          {" "}
+          Social Icons from{" "}
+          <a
+            href="https://www.iconfinder.com/icons/1543314/communication_media_network_social_social_media_web_youtube_icon"
+            title="iconfinder"
+          >
+            Iconfinder
+          </a>
+        </li>
       </ul>
     </div>
   </div>
 )
 
 export default Title
+//https://www.iconfinder.com/icons/1543314/communication_media_network_social_social_media_web_youtube_icon
