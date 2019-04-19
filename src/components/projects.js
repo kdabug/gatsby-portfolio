@@ -1,13 +1,12 @@
 import React from "react"
-import "./contacts.css"
-import contactList from "../data/contacts.js"
+import "./projects.css"
 
-const Contacts = () => {
+const Projects = () => {
   return (
-    <section id="projects" className="section contact">
-      <h1 id="contact">CONTACT</h1>
-      <div className="row text-center section-content">
-        {contactList.map(contact => (
+    <section id="#projects" className="section contact">
+      <h1 id="contact">PROJECTS</h1>
+      <div className="project-container">
+        {/* {projectList.map(project => (
           <div className="col-sm-2" key={contact.url}>
             <a
               href={contact.url}
@@ -22,10 +21,10 @@ const Contacts = () => {
               />
             </a>
           </div>
-        ))}
+        ))} */}
       </div>
     </section>
   )
 }
 
-export default Contacts
+export default Projects

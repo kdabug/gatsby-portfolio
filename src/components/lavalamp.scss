@@ -1,22 +1,24 @@
-$lavacolor: aquamarine;
+$lavacolor: lime;
 $lavablur: 3px;
+$glasscolor: white;
 /*various blob speeds*/
 $fast: 9s;
 $med: 12s;
 $slow: 15s;
 
-html {
-  background: black;
-}
-html,
-body {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
+
+// html,
+// body {
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+// }
 .container {
   margin: auto;
-  transform: scale(1.5);
+  position: absolute;
+  top: 10vh;
+  right: 10vw;
+  //transform: scale(1.5);
 }
 .top .wrapper {
   width: 100px;
@@ -93,7 +95,7 @@ body {
 }
 .glass {
   @include trap;
-  background: darken(hotpink, 20%);
+  background: darken($glasscolor, 20%);
   transform: perspective(7px) rotateX(1deg);
   filter: contrast(18);
   overflow: hidden;

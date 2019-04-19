@@ -3,8 +3,8 @@ import "./about-me.css"
 
 const AboutMe = () => {
   return (
-    <section id="#about" className="section">
-      <h1 id="about-me">about me</h1>
+    <section id="#about-me" className="section">
+      <h1 id="about-me">ABOUT ME</h1>
       <div className="about-me-content">
         this is the about me content. pretend there is stuff here.
       </div>

@@ -1,6 +1,6 @@
-const contactList = [
+export const contactList = [
   {
-    type: "Github",
+    name: "Github",
     icon: "../images/social-icons/github2.png",
     type: "social-media",
     url: "https://github.com/kdabug",
@@ -9,13 +9,13 @@ const contactList = [
     name: "Twitter",
     icon: "../images/social-icons/twitter2.png",
     type: "social-media",
-    url: "https://twitter.com/mikayda",
+    url: "https://twitter.com/kdabug",
   },
   {
     name: "Instagram",
     icon: "../images/social-icons/instagram2.png",
     type: "social-media",
-    url: "https://www.instagram.com/mikayda",
+    url: "https://www.instagram.com/kdabug",
   },
   {
     name: "LinkedIn",
@@ -31,4 +31,3 @@ const contactList = [
   },
 ]
 
-export default { contactList }

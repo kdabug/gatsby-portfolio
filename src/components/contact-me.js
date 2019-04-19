@@ -1,17 +1,20 @@
 import React from "react"
-import "./contacts.css"
-import contactList from "../data/contacts.json"
+import "./contact-me.css"
+import { contactList } from "../data/contacts.js"
 
-const Contacts = () => {
+const ContactMe = () => {
   return (
-    <section id="#contact" className="section contact">
+    <section id="#contact-me" className="section contact">
       <h1 id="contact">CONTACT</h1>
       <div className="contact-container">
-        {contactList.map(contact => (
+        {contactList.map(contact => {
+          console.log(contact)
+        return (
           <div className="contact-info" key={contact.url}>
             <a
               href={contact.url}
               target="_blank"
+              rel="noopener noreferrer"
               title={`link to my ${contact.name} account`}
               className="btn-social-icon"
               rel="noopener noreferrer"
@@ -22,10 +25,11 @@ const Contacts = () => {
               />
             </a>
           </div>
-        ))}
+        )}
+        )}
       </div>
     </section>
   )
 }
 
-export default Contacts
+export default ContactMe

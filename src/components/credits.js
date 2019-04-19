@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Credits = () => (
-  <div>
+  <section id="#credits" className="credits-section">
     <div>
       Icons made by{" "}
       <a
@@ -21,6 +21,7 @@ const Credits = () => (
         href="http://creativecommons.org/licenses/by/3.0/"
         title="Creative Commons BY 3.0"
         target="_blank"
+        rel="noopener noreferrer"
       >
         CC 3.0 BY
       </a>
@@ -84,8 +85,8 @@ const Credits = () => (
         </li>
       </ul>
     </div>
-  </div>
+  </section>
 )
 
-export default Title
+export default Credits
 //https://www.iconfinder.com/icons/1543314/communication_media_network_social_social_media_web_youtube_icon
