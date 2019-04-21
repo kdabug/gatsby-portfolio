@@ -3,8 +3,8 @@ import "./projects.css"
 
 const Projects = () => {
   return (
-    <section id="#projects" className="section contact">
-      <h1 id="contact">PROJECTS</h1>
+    <section id="#projects" className="section">
+      <h1 id="projects">PROJECTS</h1>
       <div className="project-container">
         {/* {projectList.map(project => (
           <div className="col-sm-2" key={contact.url}>

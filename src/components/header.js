@@ -2,10 +2,6 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-if (typeof window !== "undefined") {
-  // eslint-disable-next-line global-require
-  require("smooth-scroll")('a[href*="#"]')
-}
 const Header = ({ siteTitle }) => (
   <header
     style={{

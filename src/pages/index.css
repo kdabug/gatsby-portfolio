@@ -1,5 +1,20 @@
-body{
-    background-image: linear-gradient(to right, #f8eec2 20%, #ffc4fd);
-    margin: 0;
-    padding: 0;
+@font-face {
+  font-family: "Psychedelia";
+  src: url("/fonts/Psychedelia.ttf");
+}
+/* COLORS
+#010B1C 
+#EBD4AD 
+#054E69 
+#239192 
+#2738F6 
+#051F64 
+#ACB0A4 
+#7E847B  */
+
+body {
+  background-image: linear-gradient(#f8eec2 20%, #ffc4fd);
+  font: white;
+  margin: 0;
+  padding: 0;
 }

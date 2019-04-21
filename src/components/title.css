@@ -1,5 +1,35 @@
-.title{
-    font-family: Psychedilia HM Regular;
-    font-size: 30vh;
+@font-face {
+  font-family: "Psychedelia";
+  src: url("/fonts/Psychedelia.ttf");
+}
 
+.title-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #051f64;
+}
+
+.title {
+  font-family: Psychedelia;
+  font-size: 29vh;
+  margin: 100px;
+  font-weight: 100;
+  display: inline;
+  position: relative;
+  letter-spacing: 5px;
+  color: #239092cd;
+  z-index: 2;
+}
+
+.title:after {
+  content: "@kdabug";
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  color: rgba(235, 212, 173, 0.886);
 }
