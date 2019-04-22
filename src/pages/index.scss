@@ -32,13 +32,15 @@ $lighttitle: rgba(235, 212, 173, 0.886);
 $dark: #630c4f;
 $lavacolor: #fb00ffd7;
 $lavablur: 3px;
+$iconS: 64;
 
 $z-index: (
   modal: 200,
   navbar: 100,
   footer: 90,
   border-goop: 80,
-  script: 60,
+  picframes: 70,
+  script: 20,
   lava: -40,
   blobs: -50,
 );
