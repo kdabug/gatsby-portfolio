@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import "./navbar.css"
+import "./navbar.scss"
 
 if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require

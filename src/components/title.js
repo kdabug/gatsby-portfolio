@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Lavalamp from "./lavalamp"
-import "./title.css"
+import "./title.scss"
 
 const Title = () => (
   <>
@@ -10,9 +10,10 @@ const Title = () => (
       <h1 id="#kdabug" className="title">
         @kdabug
       </h1>
+      <div className="title-script">
+        <h2> curious | goal-oriented | bookish | developer </h2>
+      </div>
     </div>
-    <h2> web dev </h2>
-    <p>curious, goal-oriented, bookish </p>
   </>
 )
 

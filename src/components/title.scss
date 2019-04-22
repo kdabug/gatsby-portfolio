@@ -1,12 +1,10 @@
-@font-face {
-  font-family: "Psychedelia";
-  src: url("/fonts/Psychedelia.ttf");
-}
+@import "../pages/index.scss";
 
 .title-container {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -16,13 +14,15 @@
 
 .title {
   font-family: Psychedelia;
+  margin: 0;
+  padding: 0;
   font-size: 29vh;
-  margin: 100px;
+
   font-weight: 100;
   display: inline;
   position: relative;
   letter-spacing: 5px;
-  color: #f80f92;
+  color: $primary;
   z-index: 2;
 }
 
@@ -31,5 +31,15 @@
   position: absolute;
   left: 10px;
   top: 5px;
-  color: rgba(235, 212, 173, 0.886);
+  color: $lighttitle;
+}
+
+.title-script {
+  position: relative;
+  margin-top: -5vh;
+  text-align: right;
+  z-index: 2;
+  color: $dark;
+  font-size: 1.1em;
+  letter-spacing: 1.5px;
 }

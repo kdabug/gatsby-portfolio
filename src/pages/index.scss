@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Psychedelia";
+  src: url("/fonts/Psychedelia.ttf");
+}
+@font-face {
+  font-family: "Hyatheus";
+  src: url("/fonts/Hyatheus.otf");
+}
+/* OPTION COLORS
+#010B1C 
+#054E69 
+#239192 
+#2738F6 
+#051F64 
+#ACB0A4 
+#7E847B 
+
+
+
+#EBD4AD
+#630c4f
+#f80f92
+#835eff
+#fb00ffbf
+*/
+
+$primary: #f80f92;
+$secondary: #835eff;
+$light: #ebd4ad;
+$lighttitle: rgba(235, 212, 173, 0.886);
+$dark: #630c4f;
+$lavacolor: #fb00ffbf;
+$lavablur: 3px;
+
+body {
+  background-image: linear-gradient(-206deg, $secondary 0%, $primary 100%);
+  color: $dark;
+  margin: 0;
+  padding: 0;
+  font-family: Hyatheus;
+}
+h1 {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}

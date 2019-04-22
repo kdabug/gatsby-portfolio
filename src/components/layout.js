@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Navbar from "./navbar"
 import Lavalamp from "./lavalamp"
+import Footer from "./footer"
 
 class Layout extends React.Component {
   render() {
@@ -18,11 +19,7 @@ class Layout extends React.Component {
         <Navbar />
         <Lavalamp />
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Footer />
       </div>
     )
   }

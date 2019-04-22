@@ -1,0 +1,44 @@
+@import "../pages/index.scss";
+
+.about-me-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+}
+
+#about-me {
+  font-family: Psychedelia;
+  margin: 0;
+  padding: 0;
+  font-size: 20vh;
+  font-weight: 100;
+  display: inline;
+  position: relative;
+  letter-spacing: 5px;
+  color: $primary;
+  z-index: 2;
+}
+
+#about-me:after {
+  content: "about me";
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  color: $lighttitle;
+}
+
+.about-me-content {
+  position: relative;
+  margin-top: -5vh;
+  text-align: right;
+  z-index: 2;
+  color: $dark;
+  font-size: 1.1em;
+  letter-spacing: 1.5px;
+}

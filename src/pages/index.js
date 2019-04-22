@@ -9,8 +9,7 @@ import Contacts from "../components/contact-me"
 import Footer from "../components/footer"
 import Technologies from "../components/technologies"
 import Layout from "../components/layout"
-
-import "./index.css"
+import "./index.scss"
 
 import SEO from "../components/seo"
 
@@ -25,7 +24,6 @@ class Index extends React.Component {
           title="Mikayda Mills Portfolio"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-
         <Title />
         <div className="container-fluid main">
           <AboutMe />
@@ -33,7 +31,6 @@ class Index extends React.Component {
           <Projects />
           <Contacts />
           <Credits />
-          <Footer />
         </div>
       </Layout>
     )

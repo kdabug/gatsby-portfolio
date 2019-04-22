@@ -1,3 +1,5 @@
+@import "../pages/index.scss";
+
 .navbar-container {
   margin: 0;
   padding: 15px;
@@ -13,33 +15,25 @@
 
 .navbar-container > a {
   text-decoration: none;
+  letter-spacing: 1px;
 }
-
-/* .navbar-container > a:hover {
-  text-decoration: underline;
-} */
-
-/* .navbar a {
-  display: flex;
-  justify-content: space-around;
-} */
 
 /* A link that has not been visited */
 a:link {
-  color: white;
+  color: $light;
 }
 
 /* A link that has been visited */
 a:visited {
-  color: pink;
+  color: $light;
 }
 
 /* A link that is hovered on */
 a:hover {
-  color: orange;
+  color: $dark;
 }
 
 /* A link that is selected */
 a:active {
-  color: pink;
+  color: $light;
 }
