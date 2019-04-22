@@ -31,7 +31,6 @@ $slow: 40s;
   top: -5vh;
   left: -10vw;
   height: 15vh;
-  width: 120vw;
   z-index: 3;
 }
 .bot-goop {
@@ -146,11 +145,6 @@ $slow: 40s;
 }
 
 #svg {
-  height: 0px;
-  z-index: 1;
-}
-
-svg:not(:root) {
   height: 0px;
   z-index: 1;
 }

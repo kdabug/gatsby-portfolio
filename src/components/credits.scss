@@ -1,1 +1,48 @@
 @import "../pages/index.scss";
+
+.credits-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: green 4px solid;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+}
+
+.credits-title {
+  font-family: Psychedelia;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 20vh;
+  font-weight: 100;
+  position: relative;
+  letter-spacing: 5px;
+  color: $primary;
+  z-index: 2;
+}
+
+.credits-title:after {
+  content: "credits";
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  color: $lighttitle;
+}
+
+.credits-list {
+  list-style: disc;
+}
+
+.credit-item {
+  z-index: 2;
+  color: $dark;
+  font-size: 1.1em;
+  letter-spacing: 1.5px;
+}

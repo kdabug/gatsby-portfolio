@@ -25,13 +25,11 @@ class Index extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Title />
-        <div className="container-fluid main">
-          <AboutMe />
-          <Technologies />
-          <Projects />
-          <Contacts />
-          <Credits />
-        </div>
+        <AboutMe />
+        <Technologies />
+        <Projects />
+        <Contacts />
+        <Credits />
       </Layout>
     )
   }

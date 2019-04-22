@@ -1,5 +1,8 @@
 @import "../pages/index.scss";
-
+header {
+  width: 100vw;
+  position: fixed;
+}
 .navbar-container {
   margin: 0;
   padding: 15px;
@@ -7,7 +10,6 @@
   font-size: 30px;
   display: flex;
   justify-content: space-around;
-  position: fixed;
   top: 0;
   background-color: #fb00ff;
   z-index: 50;

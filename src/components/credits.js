@@ -1,14 +1,17 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import "./credits.scss"
 
 const Credits = () => (
   <section id="#credits" className="section">
-    <div>
-      <h1 id="credits">CREDITS</h1>
+    <div className="credits-container">
+      <h1 id="credits" className="credits-title">
+        credits
+      </h1>
       Inspiration from the following articles{" "}
-      <ul>
-        <li>
+      <ul className="credits-list">
+        <li className="credit-item">
           Icons made by{" "}
           <a
             href="https://www.flaticon.com/authors/maxim-basinski"
@@ -30,7 +33,7 @@ const Credits = () => (
             CC 3.0 BY
           </a>
         </li>
-        <li>
+        <li className="credit-item">
           {" "}
           Smooth-scrolling from
           <a
@@ -40,7 +43,7 @@ const Credits = () => (
             Chris Fitkin
           </a>{" "}
         </li>
-        <li>
+        <li className="credit-item">
           {" "}
           Gatsby Portfolio creation from{" "}
           <a
@@ -50,7 +53,7 @@ const Credits = () => (
             Maribel Duran
           </a>
         </li>
-        <li>
+        <li className="credit-item">
           {" "}
           Lavalamp from{" "}
           <a href="https://codepen.io/alexzaworski/pen/qDokc" title="Lavalamp">
@@ -61,14 +64,14 @@ const Credits = () => (
             CodePen Captain Anonymous
           </a>
         </li>
-        <li>
+        <li className="credit-item">
           {" "}
           Tech Icons from{" "}
           <a href="https://konpa.github.io/devicon/" title="Tech Icons">
             Devicon
           </a>
         </li>
-        <li>
+        <li className="credit-item">
           {" "}
           Psychadelic Font from{" "}
           <a
@@ -78,7 +81,7 @@ const Credits = () => (
             1001 Fonts - humbertogillan94
           </a>
         </li>
-        <li>
+        <li className="credit-item">
           {" "}
           Social Icons from{" "}
           <a

@@ -4,7 +4,9 @@ import "./projects.scss"
 const Projects = () => {
   return (
     <section id="#projects" className="section">
-      <h1 id="projects">PROJECTS</h1>
+      <h1 id="projects" className="projects-title">
+        projects
+      </h1>
       <div className="project-container">
         {/* {projectList.map(project => (
           <div className="col-sm-2" key={contact.url}>
