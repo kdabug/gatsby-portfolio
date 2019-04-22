@@ -11,7 +11,7 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #051f64;
+  z-index: 2;
 }
 
 .title {
@@ -22,7 +22,7 @@
   display: inline;
   position: relative;
   letter-spacing: 5px;
-  color: #239092cd;
+  color: #f80f92;
   z-index: 2;
 }
 

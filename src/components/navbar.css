@@ -5,10 +5,9 @@
   font-size: 30px;
   display: flex;
   justify-content: space-around;
-  background-color: #ffffff23;
   position: fixed;
   top: 0;
-
+  background-color: #fb00ff;
   z-index: 50;
 }
 

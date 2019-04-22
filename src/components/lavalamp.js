@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import "./lavalamp.scss"
 
 const Lavalamp = () => (
-  <div className="lava-containter">
+  <div className="lava-container">
     <div class="blobs">
       <div class="blob" />
       <div class="blob" />

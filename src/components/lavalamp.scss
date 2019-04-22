@@ -1,4 +1,4 @@
-$lavacolor: #f8eec2;
+$lavacolor: #fb00ffbf;
 $lavablur: 3px;
 $glasscolor: rgba(228, 2, 2, 0.308);
 /*various blob speeds*/
@@ -18,95 +18,6 @@ $slow: 40s;
   bottom: 0;
   right: 0;
 }
-// $dist-x: 65px;
-// $dist-y: 65px;
-// @keyframes blob-left-top-anim {
-//   0% {
-//     transform: scale(1.1) translate(0, 0);
-//   }
-//   33% {
-//     transform: scale(0.9) translate(-$dist-x, 0);
-//   }
-//   62% {
-//     transform: scale(0.7) translate(-$dist-x, -$dist-y);
-//   }
-//   94% {
-//     transform: scale(1.1) translate(0, 0);
-//   }
-// }
-
-// @keyframes blob-right-top-anim {
-//   0% {
-//     transform: scale(1.1) translate(0, 0);
-//   }
-//   33% {
-//     transform: scale(0.9) translate($dist-x, 0);
-//   }
-//   64% {
-//     transform: scale(0.7) translate($dist-x, -$dist-y);
-//   }
-//   96% {
-//     transform: scale(1.1) translate(0, 0);
-//   }
-// }
-// @keyframes blob-left-bottom-anim {
-//   0% {
-//     transform: scale(1.1) translate(0, 0);
-//   }
-//   33% {
-//     transform: scale(0.9) translate(-$dist-x, 0);
-//   }
-//   66% {
-//     transform: scale(0.7) translate(-$dist-x, $dist-y);
-//   }
-//   98% {
-//     transform: scale(1.1) translate(0, 0);
-//   }
-// }
-
-// @keyframes blob-right-bottom-anim {
-//   0% {
-//     transform: scale(1.1) translate(0, 0);
-//   }
-//   33% {
-//     transform: scale(0.9) translate($dist-x, 0);
-//   }
-//   68% {
-//     transform: scale(0.7) translate($dist-x, $dist-y);
-//   }
-//   100% {
-//     transform: scale(1.1) translate(10vh, 10vw);
-//   }
-// }
-.blob {
-  position: absolute;
-  background: $lavacolor;
-  // left: 50%;
-  // top: 50%;
-  // width: 100px;
-  // height: 100px;
-  // line-height: 100px;
-  // text-align: center;
-  // color: white;
-  // font-size: 40px;
-  // border-radius: 100%;
-  // margin-top: -50px;
-  // margin-left: -50px;
-  animation: cubic-bezier(0.77, 0, 0.175, 1) 4s infinite;
-  // blob-left-top-anim
-  // &:nth-child(2) {
-  //   animation-name: blob-right-top-anim;
-  // }
-  // &:nth-child(3) {
-  //   animation-name: blob-left-bottom-anim;
-  // }
-  // &:nth-child(4) {
-  //   animation-name: blob-right-bottom-anim;
-  // }
-  // &:nth-child(5) {
-  //   animation-name: blob-right-bottom-anim;
-  // }
-}
 
 .goop {
   background: $lavacolor;
@@ -122,16 +33,20 @@ $slow: 40s;
   left: -10vw;
   height: 15vh;
   width: 120vw;
+  z-index: 3;
 }
 .bot-goop {
   bottom: -25px;
   position: fixed;
+  z-index: 3;
 }
 .blob {
   border-radius: 60%;
   position: fixed;
+  animation: cubic-bezier(0.77, 0, 0.175, 1) 4s infinite;
   background: $lavacolor;
   filter: blur($lavablur);
+  z-index: 1;
 }
 
 @mixin blobanimator($anim, $dur) {
@@ -231,10 +146,12 @@ $slow: 40s;
   }
 }
 
-#id {
+#svg {
   height: 0px;
+  z-index: 1;
 }
 
 svg:not(:root) {
   height: 0px;
+  z-index: 1;
 }

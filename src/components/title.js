@@ -5,7 +5,7 @@ import Lavalamp from "./lavalamp"
 import "./title.css"
 
 const Title = () => (
-  <div>
+  <>
     <div className="title-container">
       <h1 id="#kdabug" className="title">
         @kdabug
@@ -13,7 +13,7 @@ const Title = () => (
     </div>
     <h2> web dev </h2>
     <p>curious, goal-oriented, bookish </p>
-  </div>
+  </>
 )
 
 export default Title

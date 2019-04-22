@@ -56,6 +56,10 @@ const Credits = () => (
           <a href="https://codepen.io/alexzaworski/pen/qDokc" title="Lavalamp">
             Maribel Duran
           </a>
+          and{" "}
+          <a href="https://codepen.io/anon/pen/KYejOY" title="Lavalamp">
+            CodePen Captain Anonymous
+          </a>
         </li>
         <li>
           {" "}
@@ -91,3 +95,4 @@ const Credits = () => (
 
 export default Credits
 //https://www.iconfinder.com/icons/1543314/communication_media_network_social_social_media_web_youtube_icon
+//https://codepen.io/anon/pen/KYejOY
