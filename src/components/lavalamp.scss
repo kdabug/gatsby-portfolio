@@ -5,96 +5,108 @@ $glasscolor: rgba(228, 2, 2, 0.308);
 $fast: 30s;
 $med: 35s;
 $slow: 40s;
-
-// html,
-// body {
-//   width: 100%;
-//   height: 100%;
-//   display: flex;
-// }
-.container {
-  // margin: auto;
-  // position: fixed;
-  // width: 100%;
-  // height: 100%;
-  // background: $glasscolor;
-  // filter: contrast(10);
+.lava-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
 }
-// .top .wrapper {
-//   width: 100px;
-//   height: 100px;
-//   position: relative;
-//   margin-left: 150px;
-// }
-// .upperBase .wrapper {
-//   width: 143px;
-//   height: 100px;
-//   position: relative;
-//   margin-left: 128px;
-//   transform: rotateY(180deg);
-//   top: 38px;
-// }
-// .lowerBase .wrapper {
-//   width: 130px;
-//   height: 50px;
-//   position: relative;
-//   margin-left: 135px;
-//   transform: rotateY(180deg);
-//   top: 17px;
+.blobs {
+  filter: url("#goo");
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+// $dist-x: 65px;
+// $dist-y: 65px;
+// @keyframes blob-left-top-anim {
+//   0% {
+//     transform: scale(1.1) translate(0, 0);
+//   }
+//   33% {
+//     transform: scale(0.9) translate(-$dist-x, 0);
+//   }
+//   62% {
+//     transform: scale(0.7) translate(-$dist-x, -$dist-y);
+//   }
+//   94% {
+//     transform: scale(1.1) translate(0, 0);
+//   }
 // }
 
-// .lowerBase .base {
-//   @include trap;
-//   background: linear-gradient(
-//     to right,
-//     #636363 0%,
-//     #969696 24%,
-//     #969696 24%,
-//     #adadad 50%,
-//     #5b5b5b 100%
-//   );
-//   transform: perspective(2px) rotateX(1deg);
+// @keyframes blob-right-top-anim {
+//   0% {
+//     transform: scale(1.1) translate(0, 0);
+//   }
+//   33% {
+//     transform: scale(0.9) translate($dist-x, 0);
+//   }
+//   64% {
+//     transform: scale(0.7) translate($dist-x, -$dist-y);
+//   }
+//   96% {
+//     transform: scale(1.1) translate(0, 0);
+//   }
 // }
-// .upperBase .base {
-//   @include trap;
-//   background: linear-gradient(
-//     to right,
-//     #6c6c6c 0%,
-//     #a5a5a5 24%,
-//     #a5a5a5 24%,
-//     #bebebe 50%,
-//     #636363 100%
-//   );
-//   transform: perspective(65px) rotateX(-25deg);
+// @keyframes blob-left-bottom-anim {
+//   0% {
+//     transform: scale(1.1) translate(0, 0);
+//   }
+//   33% {
+//     transform: scale(0.9) translate(-$dist-x, 0);
+//   }
+//   66% {
+//     transform: scale(0.7) translate(-$dist-x, $dist-y);
+//   }
+//   98% {
+//     transform: scale(1.1) translate(0, 0);
+//   }
 // }
-// .cap {
-//   @include trap;
-//   background: linear-gradient(
-//     to right,
-//     #9f9f9f 0%,
-//     #d8d8d8 24%,
-//     #d8d8d8 24%,
-//     #f1f1f1 50%,
-//     #969696 100%
-//   );
-//   transform: perspective(4px) rotateX(1deg);
+
+// @keyframes blob-right-bottom-anim {
+//   0% {
+//     transform: scale(1.1) translate(0, 0);
+//   }
+//   33% {
+//     transform: scale(0.9) translate($dist-x, 0);
+//   }
+//   68% {
+//     transform: scale(0.7) translate($dist-x, $dist-y);
+//   }
+//   100% {
+//     transform: scale(1.1) translate(10vh, 10vw);
+//   }
 // }
-// .mid .wrapper {
-//   width: 158px;
-//   height: 200px;
-//   position: relative;
-//   left: 121px;
-//   top: -12px;
-// }
-// .glass {
-//   @include trap;
-//   width: 100%;
-//   height: 100%;
-//   background: darken($glasscolor, 20%);
-//   transform: perspective(7px) rotateX(1deg);
-//   filter: contrast(18);
-//   overflow: hidden;
-// }
+.blob {
+  position: absolute;
+  background: $lavacolor;
+  // left: 50%;
+  // top: 50%;
+  // width: 100px;
+  // height: 100px;
+  // line-height: 100px;
+  // text-align: center;
+  // color: white;
+  // font-size: 40px;
+  // border-radius: 100%;
+  // margin-top: -50px;
+  // margin-left: -50px;
+  animation: cubic-bezier(0.77, 0, 0.175, 1) 4s infinite;
+  // blob-left-top-anim
+  // &:nth-child(2) {
+  //   animation-name: blob-right-top-anim;
+  // }
+  // &:nth-child(3) {
+  //   animation-name: blob-left-bottom-anim;
+  // }
+  // &:nth-child(4) {
+  //   animation-name: blob-right-bottom-anim;
+  // }
+  // &:nth-child(5) {
+  //   animation-name: blob-right-bottom-anim;
+  // }
+}
 
 .goop {
   background: $lavacolor;
@@ -105,10 +117,15 @@ $slow: 40s;
   filter: blur($lavablur);
 }
 .top-goop {
-  top: -25px;
+  position: fixed;
+  top: -5vh;
+  left: -10vw;
+  height: 15vh;
+  width: 120vw;
 }
 .bot-goop {
   bottom: -25px;
+  position: fixed;
 }
 .blob {
   border-radius: 60%;
@@ -212,4 +229,12 @@ $slow: 40s;
   100% {
     top: 100%;
   }
+}
+
+#id {
+  height: 0px;
+}
+
+svg:not(:root) {
+  height: 0px;
 }

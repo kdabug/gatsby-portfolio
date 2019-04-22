@@ -1,6 +1,6 @@
 .navbar-container {
   margin: 0;
-  padding: 15;
+  padding: 15px;
   width: 100%;
   font-size: 30px;
   display: flex;
@@ -8,7 +8,7 @@
   background-color: #ffffff23;
   position: fixed;
   top: 0;
-  font: #ffffff;
+
   z-index: 50;
 }
 
