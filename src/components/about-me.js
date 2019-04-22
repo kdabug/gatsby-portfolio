@@ -1,7 +1,9 @@
 import React from "react"
 import "./about-me.scss"
+import Img from "gatsby-image"
 
-const AboutMe = () => {
+const AboutMe = ({ profileImg }) => {
+  console.log(profileImg)
   return (
     <section id="#about-me" className="section">
       <div className="about-me-container">
@@ -11,9 +13,7 @@ const AboutMe = () => {
         <div className="about-me-content">
           <p>this is the about me content. pretend there is stuff here.</p>
         </div>
-        <div className="about-me-picture">
-          <p>INSERT PICTURE HERE</p>
-        </div>
+        <div className="about-me-picture" />
         <div className="about-me-content">
           <h2>My Goals</h2>
           <p>goalz</p>

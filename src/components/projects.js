@@ -1,7 +1,7 @@
 import React from "react"
 import "./projects.scss"
 
-const Projects = () => {
+const Projects = ({ projectImgData }) => {
   return (
     <section id="#projects" className="section">
       <h1 id="projects" className="projects-title">

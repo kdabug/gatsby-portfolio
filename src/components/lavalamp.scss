@@ -8,6 +8,7 @@ $slow: 40s;
   position: fixed;
   height: 100%;
   width: 100%;
+  @include z-index(lava);
 }
 .blobs {
   filter: url("#goo");
@@ -16,27 +17,26 @@ $slow: 40s;
   left: 0;
   bottom: 0;
   right: 0;
+  @include z-index(blobs);
 }
 
 .goop {
   background: $lavacolor;
   width: 100%;
-  height: 50px;
+  height: 10vh;
   position: fixed;
-  border-radius: 50%;
+  border-radius: 10%;
   filter: blur($lavablur);
+  @include z-index(border-goop);
 }
 .top-goop {
   position: fixed;
   top: -5vh;
-  left: -10vw;
   height: 15vh;
-  z-index: 3;
 }
 .bot-goop {
   bottom: -25px;
   position: fixed;
-  z-index: 3;
 }
 .blob {
   border-radius: 60%;
@@ -44,7 +44,6 @@ $slow: 40s;
   animation: cubic-bezier(0.77, 0, 0.175, 1) 4s infinite;
   background: $lavacolor;
   filter: blur($lavablur);
-  z-index: 1;
 }
 
 @mixin blobanimator($anim, $dur) {
@@ -59,7 +58,7 @@ $slow: 40s;
 .blob:nth-of-type(2) {
   width: 20%;
   height: 20%;
-  left: 5vw;
+  left: -5vw;
   @include blobanimator(from-bottom, $med);
   animation-delay: 5s;
   bottom: -180px;
@@ -110,22 +109,6 @@ $slow: 40s;
   @include blobanimator(from-top, $slow);
   top: -180px;
 }
-.blob:nth-of-type(9) {
-  height: 26%;
-  width: 20%;
-  left: 18vw;
-  @include blobanimator(from-top, $med);
-  top: -180px;
-  animation-delay: 10s;
-}
-.blob:nth-of-type(10) {
-  height: 28%;
-  width: 24%;
-  left: -10vw;
-  @include blobanimator(from-bottom, $slow);
-  bottom: -180px;
-  animation-delay: 2s;
-}
 
 @keyframes from-bottom {
   0% {
@@ -146,5 +129,5 @@ $slow: 40s;
 
 #svg {
   height: 0px;
-  z-index: 1;
+  z-index: -11;
 }

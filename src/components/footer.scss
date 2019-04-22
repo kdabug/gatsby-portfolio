@@ -1,1 +1,11 @@
 @import "../pages/index.scss";
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  text-align: right;
+  background-color: $lavacolor;
+  @include z-index(footer);
+}

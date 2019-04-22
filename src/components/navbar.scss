@@ -2,17 +2,16 @@
 header {
   width: 100vw;
   position: fixed;
+  @include z-index(navbar);
 }
 .navbar-container {
   margin: 0;
-  padding: 15px;
   width: 100%;
-  font-size: 30px;
+  font-size: 3vh;
   display: flex;
   justify-content: space-around;
   top: 0;
   background-color: #fb00ff;
-  z-index: 50;
 }
 
 .navbar-container > a {

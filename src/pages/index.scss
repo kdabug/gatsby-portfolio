@@ -6,6 +6,7 @@
   font-family: "Hyatheus";
   src: url("/fonts/Hyatheus.otf");
 }
+
 /* OPTION COLORS
 #010B1C 
 #054E69 
@@ -29,8 +30,26 @@ $secondary: #835eff;
 $light: #ebd4ad;
 $lighttitle: rgba(235, 212, 173, 0.886);
 $dark: #630c4f;
-$lavacolor: #fb00ffbf;
+$lavacolor: #fb00ffd7;
 $lavablur: 3px;
+
+$z-index: (
+  modal: 200,
+  navbar: 100,
+  footer: 90,
+  border-goop: 80,
+  script: 60,
+  lava: -40,
+  blobs: -50,
+);
+
+@function z-index($key) {
+  @return map-get($z-index, $key);
+}
+
+@mixin z-index($key) {
+  z-index: z-index($key);
+}
 
 body {
   background-image: linear-gradient(-206deg, $secondary 0%, $primary 100%);
@@ -46,6 +65,16 @@ h1 {
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  @include z-index(script);
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 100;
 }
 
 section {

@@ -1,6 +1,14 @@
 import React from "react"
 import "./contact-me.scss"
 import { contactList } from "../data/contacts.js"
+import {
+  FaFacebook,
+  FaTwitter,
+  FaGithub,
+  FaInstagram,
+  FaEnvelopeSquare,
+  FaLinkedin,
+} from "react-icons/fa"
 
 const ContactMe = () => {
   return (
@@ -20,10 +28,7 @@ const ContactMe = () => {
                 className="btn-social-icon"
                 rel="noopener noreferrer"
               >
-                <img
-                  src={contact.icon}
-                  alt={`link to my ${contact.name} account`}
-                />
+                {contact.comp}
               </a>
             </div>
           )

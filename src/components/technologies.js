@@ -4,6 +4,7 @@ import "./technologies.scss"
 const Technologies = () => {
   return (
     <section id="#tech" className="section">
+      <h1 className="tech-title">technologies</h1>
       <div className="tech-icon-container">
         <div className="tech-icon">
           <svg viewBox="0 0 128 128">
