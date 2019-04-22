@@ -13,7 +13,6 @@ const Title = () => (
     </div>
     <h2> web dev </h2>
     <p>curious, goal-oriented, bookish </p>
-    <Lavalamp />
   </div>
 )
 
