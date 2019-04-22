@@ -1,0 +1,91 @@
+Hyatheus Changelog
+=============
+Hyatheus- Font description:
+Hyatheus is a bold and simplistic, yet unique sans serif Typeface. It is recommended for font sizes of 20 or bigger.
+Design, Execution, and literally everything else made by q_Maxi_p.
+============
+RELEASE 1.0
+============
+Version 1.0.1
+-fixed the small t's height
+-changed a few number-related glyphs
+-fixed the h with stroke
+-removed unused and placeholder glyphs
+-added common and less common kern pairs
+-added some basic ligatures
+============
+Version 1.0.2
+-added IPA-Extension Characters, aside from greek-based ones
+-fixed g's position and width
+
+Version 1.0.2
+-added Diacritial Mark Generation Characters (aside the ones based on greek)
+-changed Numbers 
+-changed Number's width to be universal
+-updated Number-relating Characters
+
+Version 1.0.3
+-added Spacing Modifier Letters (aside the ones based on greek)
+-various miscellaneus changes
+
+Version 1.0.4
+-re-postioned DMG Characters
+-added more Kerning Pairs
+
+=============================
+Version 1.1.0, the
+~Even more Latin, common symbols and other changes but I'll do other scripts next: UPDATE~
+-added basic ligatures
+-added beta/testing characters through ligatures:
+"\et\" for the original design of Ampersand
+"\eszett\" for a new experimental look of the ß
+"\?\" for a beta-design of a new question mark.
+Feedback would be greatly appreciated!
+-removed testing shapes who were accidentally left in. Oops!
+-one surprise character hidden, it's a test for emojis.
+=============================================================
+Version 1.1.1
+-added Greek & Coptic Unicode Block
+-addes Kernings for Letters with diacritals
+-re-did circle-like shapes
+-shortened the f
+-removed some placeholder designs
+-changed the ß, it's original version is still available through "\sharp_s\"
+-added basic cyrillic letters
+=====================
+Version 1.1.2
+-added a new design for the Ampersand "\ampersand\"
+-shortened the ligatures of f
+-finished the "Cyrillic" Unicode block
+-finished the "Cyrillic Supplement" Unicode block
+=======================
+Version 1.1.3
+-made an actual good new design for Q
+-added more kerns
+-a few miscellaneous changes
+==================
+Version 1.1.4
+-made a new design for the J
+-added even more kerns and a few new kern pairs
+-re-did the Copyright and Reserved sign
+-more miscellaneous changes
+=================================
+1.2.0, the "Finally Greek and Cyrillic: UPDATE"
+-added Greek & Coptic Unicode Block
+-addes Kernings for Letters with diacritals
+-re-did circle-like shapes
+-shortened the f
+-removed some placeholder designs
+-changed the ß, it's original version is still available through "\sharp_s\"
+-added basic cyrillic letters
+-shortened the ligatures of f
+-finished the "Cyrillic" Unicode block
+-finished the "Cyrillic Supplement" Unicode block
+-made an actual good new design for Q
+-added more kerns
+-a few miscellaneous changes
+-made a new design for the J
+-added even more kerns and a few new kern pairs
+-re-did the Copyright and Reserved sign
+-more miscellaneous changes
+-actually made kerning pairs and ligatures work (If they don't, please tell me.)

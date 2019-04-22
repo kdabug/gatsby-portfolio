@@ -2,6 +2,10 @@
   font-family: "Psychedelia";
   src: url("/fonts/Psychedelia.ttf");
 }
+@font-face {
+  font-family: "Hyatheus";
+  src: url("/fonts/Hyatheus.otf");
+}
 /* COLORS
 #010B1C 
 #EBD4AD 
@@ -17,4 +21,5 @@ body {
   font: white;
   margin: 0;
   padding: 0;
+  font-family: Hyatheus;
 }

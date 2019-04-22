@@ -9,12 +9,10 @@ if (typeof window !== "undefined") {
 }
 const Header = () => (
   <header className="navbar-container">
-    <h1>
-      <Link to="/#title">@kdabug</Link>
-      <Link to="/#about-me">@about</Link>
-      <Link to="/#contact-me">@contact</Link>
-      <Link to="/#projects">@projects</Link>
-    </h1>
+    <Link to="/#title">kdabug</Link>
+    <Link to="/#about-me">about</Link>
+    <Link to="/#contact-me">contact</Link>
+    <Link to="/#projects">projects</Link>
   </header>
 )
 

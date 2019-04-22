@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import favicon from "../static/favicon.ico"
+import favicon from "./../../static/favicon.ico"
 
 function SEO({ description, meta, lang, keywords, title }) {
   const { site } = useStaticQuery(
