@@ -1,5 +1,11 @@
 @import "../pages/index.scss";
-
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100%;
+  margin-top: 10vh;
+}
 .tech-icon-container {
   position: relative;
   margin: 0;
@@ -43,7 +49,7 @@
 }
 
 .tech-title:after {
-  content: "technologies";
+  content: "skills";
   position: absolute;
   width: 100%;
   left: 10px;
@@ -56,4 +62,26 @@
   color: $dark;
   font-size: 1.1em;
   letter-spacing: 1.5px;
+}
+.resume-link-container {
+  width: 40%;
+  height: 50vh;
+  @include z-index(picframes);
+  // position: relative;
+  justify-self: flex-end;
+  margin: 2vh;
+}
+.resume {
+  background-image: url(../images/resumess.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  border: $light 0.3em solid;
+  border-radius: 1em;
+  // border-radius: 3em;
+  //filter: sepia(50%);
+  //filter: invert(0.8);
+  width: 30vw;
+  height: 60vh;
+  @include z-index(script);
 }

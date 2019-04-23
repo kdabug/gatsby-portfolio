@@ -17,22 +17,24 @@ const ContactMe = () => {
         <h1 id="contact-me" className="contact-me-title">
           contact me
         </h1>
-        {contactList.map(contact => {
-          console.log(contact)
-          return (
-            <div className="contact-info" key={contact.url}>
-              <a
-                href={contact.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-social-icon"
-                rel="noopener noreferrer"
-              >
-                {contact.comp}
-              </a>
-            </div>
-          )
-        })}
+        <div className="contact-list-container">
+          {contactList.map(contact => {
+            console.log(contact)
+            return (
+              <div className="contact-info" key={contact.url}>
+                <a
+                  href={contact.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-social-icon"
+                  rel="noopener noreferrer"
+                >
+                  {contact.comp}
+                </a>
+              </div>
+            )
+          })}
+        </div>
       </div>
     </section>
   )

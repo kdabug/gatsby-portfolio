@@ -73,7 +73,7 @@
 .about-me-picture-container {
   width: 40%;
   height: 50vh;
-  z-index: 50;
+  @include z-index(picframes);
   // position: relative;
   justify-self: flex-end;
   margin: 2vh;

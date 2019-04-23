@@ -18,23 +18,3 @@ header {
   text-decoration: none;
   letter-spacing: 1px;
 }
-
-/* A link that has not been visited */
-a:link {
-  color: $light;
-}
-
-/* A link that has been visited */
-a:visited {
-  color: $light;
-}
-
-/* A link that is hovered on */
-a:hover {
-  color: $dark;
-}
-
-/* A link that is selected */
-a:active {
-  color: $light;
-}

@@ -32,7 +32,8 @@ $lighttitle: rgba(235, 212, 173, 0.886);
 $dark: #630c4f;
 $lavacolor: #fb00ffd7;
 $lavablur: 3px;
-$iconS: 64;
+$iconS: 32;
+$iconC: #630c4f;
 
 $z-index: (
   modal: 200,
@@ -81,4 +82,24 @@ h2 {
 
 section {
   display: block;
+}
+
+/* A link that has not been visited */
+a:link {
+  color: $light;
+}
+
+/* A link that has been visited */
+a:visited {
+  color: $light;
+}
+
+/* A link that is hovered on */
+a:hover {
+  color: $dark;
+}
+
+/* A link that is selected */
+a:active {
+  color: $light;
 }

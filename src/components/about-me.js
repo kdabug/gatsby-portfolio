@@ -39,10 +39,6 @@ const AboutMe = ({ profileImg }) => {
         <div className="about-me-picture-container">
           <div className="about-me-picture" />
         </div>
-
-        <div className="about-me-content resume">
-          <h2>Link To Resume Here:</h2>
-        </div>
       </div>
     </section>
   )
