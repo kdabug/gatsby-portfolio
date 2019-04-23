@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import "./credits.scss"
 
@@ -51,8 +50,9 @@ const Credits = () => (
             href="https://medium.freecodecamp.org/how-i-made-my-portfolio-website-blazing-fast-with-gatsby-82ccddc2f671"
             title="Maribel Duran"
           >
-            Maribel Duran
-          </a>
+            Maribel Duran's
+          </a>{" "}
+          article
         </li>
         <li className="credit-item">
           {" "}
