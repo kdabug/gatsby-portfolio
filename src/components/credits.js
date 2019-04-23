@@ -7,12 +7,12 @@ const Credits = () => (
   <section id="#credits" className="section">
     <div className="credits-container">
       <h1 id="credits" className="credits-title">
-        credits
+        inspiration
       </h1>
-      Inspiration from the following articles{" "}
+      ideas modified from the following articles{" "}
       <ul className="credits-list">
         <li className="credit-item">
-          Icons made by{" "}
+          Favicon made by{" "}
           <a
             href="https://www.flaticon.com/authors/maxim-basinski"
             title="Maxim Basinski"
@@ -23,7 +23,7 @@ const Credits = () => (
           <a href="https://www.flaticon.com/" title="Flaticon">
             www.flaticon.com
           </a>{" "}
-          is licensed by{" "}
+          and is licensed by{" "}
           <a
             href="http://creativecommons.org/licenses/by/3.0/"
             title="Creative Commons BY 3.0"
@@ -35,17 +35,18 @@ const Credits = () => (
         </li>
         <li className="credit-item">
           {" "}
-          Smooth-scrolling from
+          Smooth-scrolling from a
           <a
             href="https://medium.com/@chrisfitkin/how-to-smooth-scroll-links-in-gatsby-3dc445299558"
             title="Chris Fitkin"
           >
             Chris Fitkin
           </a>{" "}
+          article
         </li>
         <li className="credit-item">
           {" "}
-          Gatsby Portfolio creation from{" "}
+          Gatsby Portfolio creation help from{" "}
           <a
             href="https://medium.freecodecamp.org/how-i-made-my-portfolio-website-blazing-fast-with-gatsby-82ccddc2f671"
             title="Maribel Duran"
@@ -55,9 +56,9 @@ const Credits = () => (
         </li>
         <li className="credit-item">
           {" "}
-          Lavalamp from{" "}
+          Lavalamp background is a mashup of some codepens created by{" "}
           <a href="https://codepen.io/alexzaworski/pen/qDokc" title="Lavalamp">
-            Maribel Duran
+            Alex Zaworski
           </a>
           and{" "}
           <a href="https://codepen.io/anon/pen/KYejOY" title="Lavalamp">
@@ -83,12 +84,12 @@ const Credits = () => (
         </li>
         <li className="credit-item">
           {" "}
-          Social Icons from{" "}
+          Social and dev icons from{" "}
           <a
-            href="https://www.iconfinder.com/icons/1543314/communication_media_network_social_social_media_web_youtube_icon"
-            title="iconfinder"
+            href="https://react-icons.netlify.com/#/icons/fa"
+            title="react-icons"
           >
-            Iconfinder
+            react-icons
           </a>
         </li>
       </ul>
