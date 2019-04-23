@@ -11,8 +11,8 @@ const Header = () => (
   <header className="navbar-container">
     <Link to="/#title">kdabug</Link>
     <Link to="/#about-me">about</Link>
-    <Link to="/#contact-me">contact</Link>
     <Link to="/#projects">projects</Link>
+    <Link to="/#contact-me">contact</Link>
   </header>
 )
 

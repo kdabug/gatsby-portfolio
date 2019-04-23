@@ -1,7 +1,7 @@
 @import "../pages/index.scss";
 
 .about-me-container {
-  margin: 0;
+  margin: 10vh 0;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -9,7 +9,7 @@
   justify-content: space-around;
   text-align: left;
   align-items: center;
-  height: auto;
+  height: 100vh;
   width: 100vw;
 }
 
@@ -47,10 +47,10 @@
   width: 50%;
   display: flex;
   flex-direction: column;
+  margin: 2vh 0;
 }
 
 .about-me-content {
-  margin: 2vh;
   @include z-index(script);
   color: $dark;
   font-size: 1.1em;
@@ -58,7 +58,7 @@
 }
 
 .about-me-content h2 {
-  color: $dark;
+  color: $light;
   font-size: 1.4em;
   letter-spacing: 1.5px;
 }
@@ -73,21 +73,20 @@
   width: 40%;
   height: 50vh;
   @include z-index(picframes);
+
   // position: relative;
-  justify-self: flex-end;
-  margin: 2vh;
 }
 .about-me-picture {
   background-image: url(../images/Mikayda.jpg);
   background-repeat: no-repeat;
-  // background-size: contain;
+  background-size: cover;
   position: relative;
   border: $lighttitle 1.3em solid;
   border-radius: 3em;
   // border-radius: 3em;
   //filter: sepia(50%);
   //filter: invert(0.8);
-  width: 90%;
+  width: 80%;
   height: 100%;
   @include z-index(script);
 }
