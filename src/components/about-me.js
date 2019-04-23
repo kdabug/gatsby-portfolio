@@ -1,9 +1,7 @@
 import React from "react"
 import "./about-me.scss"
-import Img from "gatsby-image"
 
-const AboutMe = ({ profileImg }) => {
-  console.log(profileImg)
+const AboutMe = () => {
   return (
     <section id="#about-me" className="section">
       <div className="about-me-container">

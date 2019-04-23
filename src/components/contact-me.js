@@ -1,14 +1,6 @@
 import React from "react"
 import "./contact-me.scss"
 import { contactList } from "../data/contacts.js"
-import {
-  FaFacebook,
-  FaTwitter,
-  FaGithub,
-  FaInstagram,
-  FaEnvelopeSquare,
-  FaLinkedin,
-} from "react-icons/fa"
 
 const ContactMe = () => {
   return (
@@ -19,7 +11,6 @@ const ContactMe = () => {
         </h1>
         <div className="contact-list-container">
           {contactList.map(contact => {
-            console.log(contact)
             return (
               <div className="contact-info" key={contact.url}>
                 <a
