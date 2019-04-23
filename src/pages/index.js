@@ -33,7 +33,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <SEO
-        description="a portfolio for Mikayda Mills"
+        description="curious | goal-oriented | bookish | developer"
         title="Mikayda Mills Portfolio"
         keywords={[`blog`, `gatsby`, `javascript`, `react`]}
       />
