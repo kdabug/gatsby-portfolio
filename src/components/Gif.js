@@ -23,11 +23,11 @@ class Gif extends Component {
       <GifWrap onMouseEnter={this.handleGif} onMouseLeave={this.handleGif}>
         <img src={source} />
         <div>
-          <CardButton>
+          <CardButton onClick={() => window.open(this.props.giturl, "_blank")}>
             <GoMarkGithub size={20} />
             github project
           </CardButton>
-          <CardButton>
+          <CardButton onClick={() => window.open(this.props.weburl, "_blank")}>
             <GoGlobe size={20} />
             website
           </CardButton>
