@@ -12,8 +12,8 @@ const Projects = () => {
       </h1>
       <div className="project-container">
         <GifContainer>
-          {projectData.map(({ still, vid, giturl, weburl }) => (
-            <Gif static={still} vid={vid} giturl={giturl} weburl={weburl} />
+          {projectData.map(({ still, vid, giturl, weburl, title, about, tech }) => (
+            <Gif static={still} vid={vid} giturl={giturl} weburl={weburl} title={title} about={about} tech={tech}/>
           ))}
         </GifContainer>
       </div>
