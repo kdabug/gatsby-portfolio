@@ -16,7 +16,7 @@ const Index = () => {
       <SEO
         description="curious | goal-oriented | bookish | developer"
         title="Mikayda Mills Portfolio"
-        keywords={[`portfolio`, `gatsby`, `javascript`, `react`]}
+        keywords={[`mikayda`, `portfolio`, `gatsby`, `javascript`, `react`]}
       />
       <Title />
       <AboutMe />
