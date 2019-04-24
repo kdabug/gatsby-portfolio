@@ -5,7 +5,7 @@ import "./navbar.scss"
 
 if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require
-  require("smooth-scroll")('a[href*="#"]')
+  require("smooth-scroll")('a[href*="#"]', { offset: 100 })
 }
 const Header = () => (
   <header className="navbar-container">

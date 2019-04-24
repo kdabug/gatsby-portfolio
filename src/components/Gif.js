@@ -7,13 +7,21 @@ class Gif extends Component {
     super()
     this.state = {
       gifStatic: true,
+      showMore: false,
     }
     this.handleGif = this.handleGif.bind(this)
+    this.handleShowMore = this.handleShowMore.bind(this)
   }
 
   handleGif() {
     this.setState((prevState, nextState) => ({
       gifStatic: !prevState.gifStatic,
+    }))
+  }
+
+  handleShowMore() {
+    this.setState((prevState, nextState) => ({
+      showMore: !prevState.showMore,
     }))
   }
 
@@ -32,6 +40,18 @@ class Gif extends Component {
             website
           </CardButton>
         </div>
+        <Description>
+          <p>{this.props.title}</p>
+          <ShowButton onClick={this.handleShowMore}>
+            {this.state.showMore ? "show less" : "show more"}
+          </ShowButton>
+          {this.state.showMore && (
+            <>
+              <p>{this.props.about}</p>
+              <p>tech:{this.props.tech}</p>
+            </>
+          )}
+        </Description>
       </GifWrap>
     )
   }
@@ -41,22 +61,21 @@ export { Gif }
 
 export const GifContainer = styled.div`
   margin-top: 10vh;
-  margin: 0 auto;
-  width: 75vw;
+  margin: 0;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 `
 
 export const GifWrap = styled.div`
-  max-height: 357px;
   width: 35%;
+  height: 50%;
   cursor: pointer;
   margin: 30px;
   padding: 0;
   display: flex;
   flex-direction: column;
-
   &:hover {
     transform: scale(1.05);
     transition: all 1s;
@@ -70,21 +89,49 @@ export const GifWrap = styled.div`
     height: 315px;
     width: 100%;
   }
+  p {
+    text-align: center;
+  }
 `
 
 const CardButton = styled.div`
   width: 50%;
   height: 35px;
-  display: flex;
-  background: lightgray;
+  background: #ebd4ad;
   align-items: center;
-  border: 2px solid gray;
-  padding: 17px 30px 17px 30px;
+  border: 2px solid #630c4f;
+  padding: 17px 0px 17px 0px;
   justify-content: space-around;
 
   &:hover {
-    color: white;
-    background: gray;
-    border: 2px solid lightgray;
+    color: #ebd4ad;
+    background: #f80f92;
+  }
+`
+
+const Description = styled.div`
+  height: auto;
+  display: flex;
+  width: 99%;
+  flex-direction: column;
+  background: #ebd4ad;
+  align-items: center;
+  border: 2px solid #630c4f;
+  justify-content: space-around;
+`
+
+const ShowButton = styled.button`
+  display: flex;
+  width: 35%;
+  background: #835eff;
+  align-items: center;
+  border: 2px solid #835eff;
+  border-radius: 20px;
+  justify-content: space-around;
+  margin: 10px;
+
+  &:hover {
+    color: #ebd4ad;
+    background: #f80f92;
   }
 `

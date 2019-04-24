@@ -8,11 +8,11 @@
 }
 .tech-icon-container {
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   height: 100%;
   width: 100%;
@@ -23,14 +23,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100%;
-  width: 100%;
 }
 .tech-icon {
   width: 5vw;
   height: 5vh;
   padding: 2vh;
-  margin: 0;
+  margin: 2vh;
   @include z-index(script);
   color: $dark;
 }
