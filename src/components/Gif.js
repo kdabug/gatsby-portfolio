@@ -66,11 +66,13 @@ export const GifContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  @media only screen and (max-width: 640px) {
+  }
 `
 
 export const GifWrap = styled.div`
-  width: 35%;
-  height: 50%;
+  width: 33%;
+  height: auto;
   cursor: pointer;
   margin: 30px;
   padding: 0;
@@ -91,6 +93,9 @@ export const GifWrap = styled.div`
   }
   p {
     text-align: center;
+  }
+  @media only screen and (max-width: 640px) {
+    width: auto;
   }
 `
 

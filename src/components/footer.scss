@@ -9,3 +9,9 @@ footer {
   background-color: $lavacolor;
   @include z-index(footer);
 }
+
+@media only screen and (max-width: 640px) {
+  footer {
+    text-align: left;
+  }
+}

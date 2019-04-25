@@ -6,8 +6,7 @@ header {
 }
 .navbar-container {
   margin: 0;
-  width: 100%;
-  font-size: 3vh;
+  max-width: 100%;
   display: flex;
   justify-content: space-around;
   top: 0;
@@ -17,4 +16,11 @@ header {
 .navbar-container > a {
   text-decoration: none;
   letter-spacing: 1px;
+  font-size: 4vh;
+}
+
+@media only screen and (max-width: 640px) {
+  .navbar-container > a {
+    font-size: 2vh;
+  }
 }

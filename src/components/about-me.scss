@@ -23,7 +23,7 @@
   margin: 0;
   margin-top: 10vh;
   padding: 0;
-  font-size: 20vh;
+
   font-weight: 100;
   position: relative;
   letter-spacing: 5px;
@@ -53,8 +53,6 @@
 .about-me-content {
   @include z-index(script);
   color: $dark;
-  font-size: 1.1em;
-  letter-spacing: 1.5px;
 }
 
 .about-me-content h2 {
@@ -81,9 +79,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  //background-position: center;
   border: $lighttitle 1.3em solid;
   border-radius: 3em;
-  // border-radius: 3em;
   //filter: sepia(50%);
   //filter: invert(0.8);
   width: 80%;
@@ -97,4 +95,36 @@
 .topics {
 }
 .resume {
+}
+
+@media only screen and (max-width: 640px) {
+  .about-me-content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 0;
+  }
+  .about-me-container {
+    margin: 10vh 2vw;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+  .about-me-content h2 {
+    text-align: center;
+  }
+  .about-me-picture-container {
+    width: 80%;
+    height: auto;
+    @include z-index(picframes);
+
+    // position: relative;
+  }
+  .about-me-picture {
+    background-size: cover;
+    height: 30vh;
+    width: 90%;
+    border: $lighttitle 15px solid;
+  }
 }
