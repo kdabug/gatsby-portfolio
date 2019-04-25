@@ -12,16 +12,6 @@ import SubratsGif from "../images/projects/subrats.gif"
 
 export const projectData = [
   {
-    still: StaticTraitor,
-    vid: TraitorGif,
-    giturl: "https://github.com/kdabug/project-api",
-    weburl: "https://gallant-haibt-6c9b60.netlify.com/",
-    title: "Traitor",
-    about:
-      "kid-friendly stock market app with a pirate theme, because not all 'traders' are 'traitors'",
-    tech: "react",
-  },
-  {
     still: StaticTrial,
     vid: TrialGif,
     giturl: "https://github.com/kdabug/trial-project",
@@ -39,6 +29,16 @@ export const projectData = [
     about:
       "a game - help the woman collect her dropped gems and receive a 'fortunate' surprise",
     tech: "vanilla javascript, dom manipulation, css, html",
+  },
+  {
+    still: StaticTraitor,
+    vid: TraitorGif,
+    giturl: "https://github.com/kdabug/project-api",
+    weburl: "https://gallant-haibt-6c9b60.netlify.com/",
+    title: "Traitor",
+    about:
+      "kid-friendly stock market app with a pirate theme, because not all 'traders' are 'traitors'",
+    tech: "react",
   },
   {
     still: StaticSubrats,
