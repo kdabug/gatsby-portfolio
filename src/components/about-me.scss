@@ -103,6 +103,7 @@
     display: flex;
     flex-direction: column;
     margin: 2vh 0;
+    order: 3;
   }
   .about-me-container {
     margin: 10vh 2vw;
@@ -114,12 +115,14 @@
   .about-me-content h2 {
     text-align: center;
   }
+  .about-me-title {
+    order: 1;
+  }
   .about-me-picture-container {
+    order: 2;
     width: 80%;
     height: auto;
     @include z-index(picframes);
-
-    // position: relative;
   }
   .about-me-picture {
     background-size: cover;
