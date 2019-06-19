@@ -8,7 +8,7 @@ const Technologies = () => {
       <h1 className="tech-title">skills</h1>
       <div className="skills-container">
         <div className="resume-container">
-          <a href="/static/MikaydaMillsResume042119.pdf" download>
+          <a href="/static/MikaydaMillsResume0619.pdf" download>
             <h2>DOWNLOAD RESUME</h2>
           </a>
           <div className="resume-pic-container">
