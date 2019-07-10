@@ -1,6 +1,6 @@
 # Mikayda's Portfolio Site
 
-![Favicon]('./static/favicon.ico')
+![Favicon](https://www.piskelapp.com/p/agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgKCWhtedCww/view)
 
 ## INTRODUCTION
 
