@@ -1,6 +1,6 @@
 # Mikayda's Portfolio Site
 
-![Sun](https://svgsilh.com/svg/914681.svg)
+![Sun](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/SMirC-sunny.svg/768px-SMirC-sunny.svg.png)
 
 ## INTRODUCTION
 
