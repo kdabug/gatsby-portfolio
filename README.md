@@ -12,4 +12,4 @@ This project utilizes React.js through a [Gatsby.js](https://www.gatsbyjs.org/) 
 Clone and `npm install`. And feel groovy. Always feel groovy. 
 
 ## STATUS
-Consistently, periodically, sporadically updating in 
+Consistently, periodically, sporadically updating in time with the beat of the music (cue song and dance reprisal).
