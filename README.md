@@ -1,6 +1,6 @@
 # Mikayda's Portfolio Site
 
-![Favicon]('./static/favicon.ico)
+![Favicon]('./static/favicon.ico')
 
 ## INTRODUCTION
 
