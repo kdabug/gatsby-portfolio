@@ -2,11 +2,11 @@
 
 ## INTRODUCTION
 
-hi. i'm mikayda. this is my readme. for my portfolio. enjoy. (insert song and dance here).
+hi. i'm mikayda. i'm kdabug. this is my readme. for my portfolio. enjoy. (insert song and dance here).
 
 ## TECHNOLOGIES
 
-This project utilizes React.js through a [Gatsby.js](https://www.gatsbyjs.org/) framework. Dependencies used -> This site styled using Sass (enabled `gatsby-plugin-sass`) and Styled components (`npm i styled-components`). Tech Icons are from `react-icons`.
+This project utilizes React.js through a [Gatsby.js](https://www.gatsbyjs.org/) framework. Dependencies used -> this site styled using Sass (enabled `gatsby-plugin-sass`) and styled components (`npm i styled-components`). Tech Icons are from `react-icons`. Inspiration is noted at the bottom of my page. 
       
 ## LAUNCH
 Clone and `npm install`. And feel groovy. Always feel groovy. 
