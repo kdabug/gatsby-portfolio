@@ -8,11 +8,15 @@ hi. i'm mikayda. i'm kdabug. this is my readme. for my portfolio. enjoy. (insert
 
 ## TECHNOLOGIES
 
-This project utilizes React.js through a [Gatsby.js](https://www.gatsbyjs.org/) framework. Dependencies used -> this site styled using Sass (enabled `gatsby-plugin-sass`) and styled components (`npm i styled-components`). Tech Icons are from `react-icons`. Inspiration is noted at the bottom of my page.
+This project utilizes React.js through a [Gatsby.js](https://www.gatsbyjs.org/) framework. Dependencies used -> this site is mainly styled using Sass (enabled `gatsby-plugin-sass`) but also includes styled components (`npm i styled-components`). Tech Icons are from `react-icons`. Inspiration is noted at the bottom of my page.
 
 ## LAUNCH
 
-Clone and `npm install`. And feel groovy. Always feel groovy.
+-  Clone and `npm install`. 
+- `npm run start` to get a dev build
+- `npm run build` to get a prod build 
+
+And feel groovy. Always feel groovy.
 
 ## STATUS
 
