@@ -12,9 +12,9 @@ This project utilizes React.js through a [Gatsby.js](https://www.gatsbyjs.org/) 
 
 ## LAUNCH
 
--  Clone and `npm install`. 
+- Clone and `npm install`.
 - `npm run start` to get a dev build
-- `npm run build` to get a prod build 
+- `npm run build` to get a prod build
 
 And feel groovy. Always feel groovy.
 
