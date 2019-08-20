@@ -11,7 +11,11 @@ const Title = () => (
         @kdabug
       </h1>
       <div className="title-script">
-        <h2> curious | goal-oriented | bookish | developer </h2>
+        <h2>
+          {" "}
+          curious | goal-oriented | bookish |{" "}
+          <span className="vanilla">developer</span>{" "}
+        </h2>
       </div>
     </div>
   </>

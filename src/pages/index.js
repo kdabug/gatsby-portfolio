@@ -23,7 +23,7 @@ const Index = () => {
       <Technologies />
       <Projects />
       <Contacts />
-      <Credits />
+      {/* <Credits /> */}
     </Layout>
   )
 }

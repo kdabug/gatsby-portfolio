@@ -1,6 +1,8 @@
 @import "../pages/index.scss";
 
 footer {
+  display: flex;
+  flex-direction: row;
   position: fixed;
   bottom: 0;
   height: auto;
@@ -15,3 +17,5 @@ footer {
     text-align: left;
   }
 }
+
+@import "../pages/index.scss";
