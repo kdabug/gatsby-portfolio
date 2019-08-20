@@ -29,11 +29,10 @@
 
 .btn-social-icon-section {
   svg {
-    height: 15vh;
+    height: 3vh;
     width: auto;
   }
 }
-
 .contact-info-section {
   @include z-index(script);
   color: $dark;
@@ -46,11 +45,17 @@
   @include z-index(script);
   width: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-left: 20px;
 }
 .icon {
   width: 8vw;
   height: auto;
+}
+.content-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }

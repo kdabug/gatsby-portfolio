@@ -1,6 +1,7 @@
 import React from "react"
 import "./contact-me.scss"
 import ContactList from "./contact-list"
+import ContactForm from "./contact-form"
 
 const Contacts = () => {
   return (
@@ -9,8 +10,10 @@ const Contacts = () => {
         <h1 id="contact-me" className="contact-me-title">
           contact me
         </h1>
-        <ContactList location="section" />
-        <ContactForm />
+        <div className="content-section">
+          <ContactList location="section" />
+          <ContactForm />
+        </div>
       </div>
     </section>
   )
