@@ -1,0 +1,29 @@
+@import "../pages/index.scss";
+.c-form__contact {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  label {
+    margin: 20px;
+  }
+  input,
+  textarea {
+    margin: 0 20px;
+    width: 40vw;
+    background-color: $input;
+    outline: none;
+  }
+  button {
+    width: 20vw;
+    align-self: center;
+    height: auto;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: $input;
+    outline: none;
+  }
+  button:hover {
+    color: $input;
+    background-color: $dark;
+  }
+}

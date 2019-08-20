@@ -1,0 +1,61 @@
+@import "../pages/index.scss";
+
+.btn-social-icon-footer {
+  svg {
+    height: 30px;
+    color: $dark;
+  }
+  svg:hover {
+    height: 30px;
+    color: $light;
+  }
+}
+// .contact-info-footer {
+//   @include z-index(script);
+//   color: $dark;
+//   width: 15vw;
+//   height: auto;
+//   font-size: 1.1em;
+//   letter-spacing: 1.5px;
+// }
+.contact-list-container-footer {
+  @include z-index(script);
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.btn-social-icon-section {
+  svg {
+    height: 3vh;
+    width: auto;
+  }
+}
+.contact-info-section {
+  @include z-index(script);
+  color: $dark;
+  width: 15vw;
+  height: auto;
+  font-size: 1.1em;
+  letter-spacing: 1.5px;
+}
+.contact-list-container-section {
+  @include z-index(script);
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 20px;
+}
+.icon {
+  width: 8vw;
+  height: auto;
+}
+.content-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}

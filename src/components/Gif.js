@@ -66,6 +66,7 @@ export const GifContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
   @media only screen and (max-width: 770px) {
   }
 `
@@ -78,9 +79,11 @@ export const GifWrap = styled.div`
   padding: 0;
   display: flex;
   flex-direction: column;
+  border: 4px solid #ebd4ad;
+  border-radius: 10px;
   &:hover {
     transform: scale(1.05);
-    transition: all 1s;
+    transition: all 0.3s;
   }
   div {
     display: flex;
@@ -90,6 +93,7 @@ export const GifWrap = styled.div`
     margin: 0;
     height: 315px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
   }
   p {
     text-align: center;
@@ -104,7 +108,7 @@ const CardButton = styled.div`
   height: 35px;
   background: #ebd4ad;
   align-items: center;
-  border: 2px solid #630c4f;
+
   padding: 17px 0px 17px 0px;
   justify-content: space-around;
 

@@ -12,18 +12,20 @@ const AboutMe = () => {
           <div className="about-me-content general">
             <h2>hi, i'm Mikayda Mills</h2>
             <p>
-              i live in nyc. my husband and i are both devs. so is our dog.
+              i live in nyc. my husband and i are both devs.{" "}
+              <span className="accent">so is our dog</span>.
               <br />
               diggin' the groovy vibes? 'life is nothing w/o a theme' - emily
-              dickinson #ladieswhocode #lawyerswhocode
+              dickinson{" "}
+              <span className="accent">#ladieswhocode #lawyerswhocode</span>
             </p>
           </div>
           <div className="about-me-content goals">
             <h2>my goalz</h2>
             <p>
-              be of use, make an impact, create world-changing tech, complete
-              the mission, dance in all of the meadows, watch a baseball game in
-              every major league stadium.
+              be of use, <span className="accent">make an impact</span>, create
+              world-changing tech, complete the mission, dance in all of the
+              meadows, watch a baseball game in every major league stadium.
             </p>
           </div>
           <div className="about-me-content topics">

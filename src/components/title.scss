@@ -45,6 +45,9 @@
   letter-spacing: 1.5px;
   font-size: 3.5vh;
 }
+.vanilla {
+  color: $lighttitle;
+}
 
 @media only screen and (max-width: 770px) {
   .title {
@@ -52,5 +55,8 @@
   }
   .title-script {
     margin-top: 2vh;
+  }
+  .title-script h2 {
+    font-size: 20px;
   }
 }

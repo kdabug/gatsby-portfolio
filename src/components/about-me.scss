@@ -53,12 +53,15 @@
 .about-me-content {
   @include z-index(script);
   color: $dark;
+  text-align: right;
 }
 
 .about-me-content h2 {
   color: $light;
   font-size: 1.4em;
   letter-spacing: 1.5px;
+  text-align: right;
+  font-weight: bold;
 }
 
 .about-me-content p {
@@ -88,13 +91,8 @@
   height: 100%;
   @include z-index(script);
 }
-.general {
-}
-.goals {
-}
-.topics {
-}
-.resume {
+.accent {
+  color: $accent;
 }
 
 @media only screen and (max-width: 770px) {
