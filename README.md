@@ -18,4 +18,4 @@ And feel groovy. Always feel groovy.
 
 ## STATUS
 
-Consistently, periodically, sporadically updating in time with the beat of the music (cue song and dance repris
+Consistently, periodically, sporadically updating in time with the beat of the music (cue song and dance reprisal).
