@@ -1,6 +1,4 @@
-# Mikayda's Portfolio Site
-
-![Sun](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/SMirC-sunny.svg/768px-SMirC-sunny.svg.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/SMirC-sunny.svg/768px-SMirC-sunny.svg.png" height="100px" /><h1>Mikayda's Portfolio Site</h1> 
 
 ## INTRODUCTION
 
@@ -20,4 +18,4 @@ And feel groovy. Always feel groovy.
 
 ## STATUS
 
-Consistently, periodically, sporadically updating in time with the beat of the music (cue song and dance reprisal).
+Consistently, periodically, sporadically updating in time with the beat of the music (cue song and dance repris
