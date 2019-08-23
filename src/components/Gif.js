@@ -48,7 +48,7 @@ class Gif extends Component {
           {this.state.showMore && (
             <>
               <p>{this.props.about}</p>
-              <p>tech:{this.props.tech}</p>
+              <p>tech: {this.props.tech}</p>
             </>
           )}
         </Description>
