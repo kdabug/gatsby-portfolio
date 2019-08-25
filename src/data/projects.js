@@ -93,7 +93,7 @@ export const projectData = [
     still: StaticFarmersDog,
     vid: FarmersDogGif,
     giturl: "https://github.com/kdabug/farmers-dog-clone",
-    weburl: "www.clone-farmers-dog-mills.surge.sh",
+    weburl: "https://www.clone-farmers-dog-mills.surge.sh",
     title: "CLONE - Farmer's Dog - CLONE",
     about:
       "this is a very quickly spun-up CLONE of the Farmer's Dog site - https://www.thefarmersdog.com/ - because I love puppies.",
