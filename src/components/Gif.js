@@ -41,7 +41,7 @@ class Gif extends Component {
           </CardButton>
         </div>
         <Description>
-          <p>{this.props.title}</p>
+          <h2>{this.props.title}</h2>
           <ShowButton onClick={this.handleShowMore}>
             {this.state.showMore ? "show less" : "show more"}
           </ShowButton>
@@ -79,7 +79,8 @@ export const GifWrap = styled.div`
   padding: 0;
   display: flex;
   flex-direction: column;
-  border: 4px solid #ebd4ad;
+  border: 20px solid #ebd4ad;
+  background-color: #ebd4ad;
   border-radius: 10px;
   &:hover {
     transform: scale(1.05);
@@ -119,28 +120,33 @@ const CardButton = styled.div`
 `
 
 const Description = styled.div`
-  height: auto;
+  height: 100%;
   display: flex;
   width: 99%;
   flex-direction: column;
   background: #ebd4ad;
   align-items: center;
-  border: 2px solid #630c4f;
+  border: 4px solid #f80f92;
+  border-radius: 10px;
   justify-content: space-around;
+  h2 {
+    font-size: 35px;
+  }
 `
 
 const ShowButton = styled.button`
   display: flex;
   width: 35%;
-  background: #835eff;
+  background: #f80f92;
   align-items: center;
-  border: 2px solid #835eff;
+  border: 2px solid #f80f92;
   border-radius: 20px;
   justify-content: space-around;
   margin: 10px;
+  font-size: 20px;
 
   &:hover {
     color: #ebd4ad;
-    background: #f80f92;
+    background: #835eff;
   }
 `

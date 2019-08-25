@@ -43,7 +43,7 @@
 }
 .contact-list-container-section {
   @include z-index(script);
-  width: auto;
+  width: 20%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -54,7 +54,7 @@
   width: 8vw;
   height: auto;
 }
-.content-section {
+.contact-content-section {
   display: flex;
   flex-direction: row;
   width: 100%;

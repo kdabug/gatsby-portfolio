@@ -51,35 +51,3 @@
   font-size: 1.1em;
   letter-spacing: 1.5px;
 }
-
-@media only screen and (max-width: 770px) {
-  .about-me-content-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 2vh 0;
-  }
-  .about-me-container {
-    margin: 10vh 2vw;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    height: auto;
-  }
-  .about-me-content h2 {
-    text-align: center;
-  }
-  .about-me-picture-container {
-    width: 80%;
-    height: auto;
-    @include z-index(picframes);
-
-    // position: relative;
-  }
-  .about-me-picture {
-    background-size: cover;
-    height: 30vh;
-    width: 90%;
-    border: $lighttitle 15px solid;
-  }
-}

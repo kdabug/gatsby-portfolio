@@ -47,7 +47,7 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  margin: 2vh 0;
+  margin: 2vh 20px;
 }
 
 .about-me-content {
@@ -58,7 +58,7 @@
 
 .about-me-content h2 {
   color: $light;
-  font-size: 1.4em;
+  font-size: 2em;
   letter-spacing: 1.5px;
   text-align: right;
   font-weight: bold;
@@ -66,7 +66,7 @@
 
 .about-me-content p {
   color: $dark;
-  font-size: 1.1em;
+  font-size: 1.2em;
   letter-spacing: 1.5px;
 }
 
