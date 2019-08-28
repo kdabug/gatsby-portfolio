@@ -23,6 +23,7 @@
 #f80f92
 #835eff
 #fb00ff
+#160211
 */
 
 $primary: #f80f92;
@@ -31,7 +32,7 @@ $light: #ebd4ad;
 $lighttitle: rgba(235, 212, 173, 0.886);
 $input: rgba(252, 239, 216, 0.886);
 
-$dark: #630c4f;
+$dark: #160211;
 $accent: #ecafde;
 $lavacolor: #fb00ffd7;
 $medialava: #fb00fff0;
@@ -64,7 +65,8 @@ body {
   color: $dark;
   margin: 0;
   padding: 0;
-  font-family: Hyatheus;
+  font-family: Hyatheus, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
   overflow-x: hidden;
   width: 100%;
   height: 100%;
