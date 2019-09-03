@@ -12,31 +12,37 @@ const AboutMe = () => {
           <div className="about-me-content general">
             <h2>hi, i'm Mikayda Mills</h2>
             <p>
-              i live in nyc. my husband and i are both devs.{" "}
+              aka kdabug. i live in nyc. my husband and i are both devs.{" "}
               <span className="accent">so is our dog</span>.
-              <br />
-              diggin' the groovy vibes? 'life is nothing w/o a theme' - emily
-              dickinson{" "}
+              <br /> i put smart, research-driven ideas forward to create
+              impactful solutions. i love logic games, and i consistently
+              challenge myself - which is how I've landed in software
+              engineering.
               <span className="accent">#ladieswhocode #lawyerswhocode</span>
             </p>
           </div>
           <div className="about-me-content goals">
-            <h2>my goalz</h2>
+            <h2>let's talk about:</h2>
             <p>
-              be of use, <span className="accent">make an impact</span>, create
-              world-changing tech, complete the mission, dance in all of the
-              meadows, watch a baseball game in every major league stadium.
+              being of use & <span className="accent">making an impact</span>,
+              creating world-changing tech, completing the mission, dancing in
+              all of the meadows, watching a baseball game in every major league
+              stadium.
+            </p>
+            <p>
+              the Beatles, a dog called Brady, the color green, geaux LSU
+              Tigers, baseball, gemstones, video games, tarot card readings,
+              yoga, crochet hooks
             </p>
           </div>
-          <div className="about-me-content topics">
+          {/* <div className="about-me-content topics">
             <h2>my topicz</h2>
             <p>
               the Beatles, a dog called Brady, the color green, geaux LSU
-              Tigers, baseball, John Irving novels, triathalons, gemstones,
-              video games, tarot card readings, yoga, crochet hooks, art
-              galleries
+              Tigers, baseball, gemstones, video games, tarot card readings,
+              yoga, crochet hooks
             </p>
-          </div>
+          </div> */}
         </div>
         <div className="about-me-picture-container">
           <div className="about-me-picture" />
