@@ -11,7 +11,7 @@ const Technologies = () => {
           <a
             href="https://www.dropbox.com/s/bh28yugbae6e7mc/MikaydaMillsSEResume0819.pdf?dl=0"
             download
-            target="_blank"
+        
           >
             <h2>DOWNLOAD RESUME</h2>
           </a>
@@ -22,9 +22,9 @@ const Technologies = () => {
         <div className="tech-icon-container">
           <h2>TECH</h2>
           <div className="tech-icon-list">
-            {techList.map(icon => {
+            {techList.map((icon, i) => {
               return (
-                <div className="tech-icon" key={icon.comp}>
+                <div className="tech-icon" key={i}>
                   {icon.comp}
                 </div>
               )

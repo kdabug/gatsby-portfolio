@@ -1,7 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
+
 import Title from "../components/title"
-import Credits from "../components/credits"
+//import Credits from "../components/credits"
 import AboutMe from "../components/about-me"
 import Projects from "../components/projects"
 import Contacts from "../components/contact-me"

@@ -1,7 +1,6 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
+
 import React from "react"
-import Lavalamp from "./lavalamp"
+
 import "./title.scss"
 
 const Title = () => (

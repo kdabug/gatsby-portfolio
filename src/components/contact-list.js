@@ -14,7 +14,6 @@ const ContactList = props => {
               target="_blank"
               rel="noopener noreferrer"
               className={`btn-social-icon-${location}`}
-              rel="noopener noreferrer"
             >
               {contact.comp}
             </a>

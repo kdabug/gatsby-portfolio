@@ -1,20 +1,20 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+
 import "./lavalamp.scss"
 
 const Lavalamp = () => (
   <div className="lava-container">
-    <div class="blobs">
-      <div class="blob" />
-      <div class="blob" />
-      <div class="blob" />
-      <div class="blob" />
-      <div class="blob" />
-      <div class="blob" />
-      <div class="blob" />
-      <div class="blob" />
-      <div class="goop top-goop" />
-      <div class="goop bot-goop" />
+    <div className="blobs">
+      <div className="blob" />
+      <div className="blob" />
+      <div className="blob" />
+      <div className="blob" />
+      <div className="blob" />
+      <div className="blob" />
+      <div className="blob" />
+      <div className="blob" />
+      <div className="goop top-goop" />
+      <div className="goop bot-goop" />
     </div>
 
     <svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1">

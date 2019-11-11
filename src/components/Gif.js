@@ -29,7 +29,7 @@ class Gif extends Component {
     const source = this.state.gifStatic ? this.props.static : this.props.vid
     return (
       <GifWrap onMouseEnter={this.handleGif} onMouseLeave={this.handleGif}>
-        <img src={source} />
+        <img src={source} alt={this.props.title}/>
         <div>
           <CardButton onClick={() => window.open(this.props.giturl, "_blank")}>
             <GoMarkGithub size={20} />

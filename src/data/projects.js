@@ -1,4 +1,4 @@
-import React from "react"
+
 import StaticTraitor from "../images/projects/static-traitor.png"
 import TraitorGif from "../images/projects/traitor.gif"
 import StaticGypsy from "../images/projects/static-gypsy.png"
