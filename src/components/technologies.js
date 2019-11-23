@@ -11,7 +11,6 @@ const Technologies = () => {
           <a
             href="https://www.dropbox.com/s/bh28yugbae6e7mc/MikaydaMillsSEResume0819.pdf?dl=0"
             download
-        
           >
             <h2>DOWNLOAD RESUME</h2>
           </a>
