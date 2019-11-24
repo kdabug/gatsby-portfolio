@@ -8,9 +8,12 @@ const AboutMe = () => {
         <h1 id="about-me" className="about-me-title">
           about me
         </h1>
+        <div className="about-me-picture-container">
+          <div className="about-me-picture" />
+        </div>
         <div className="about-me-content-container">
           <div className="about-me-content general">
-            <h2>hi, i'm Mikayda Mills</h2>
+            <h2>hi, i'm Mikayda</h2>
             <p>
               aka kdabug. i live in nyc. my husband and i are both devs.{" "}
               <span className="accent">so is our dog</span>.
@@ -43,9 +46,6 @@ const AboutMe = () => {
               yoga, crochet hooks
             </p>
           </div> */}
-        </div>
-        <div className="about-me-picture-container">
-          <div className="about-me-picture" />
         </div>
       </div>
     </section>
