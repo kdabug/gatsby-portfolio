@@ -100,17 +100,17 @@ section {
 
 /* A link that has not been visited */
 a:link {
-  color: $light;
+  color: $dark;
 }
 
 /* A link that has been visited */
 a:visited {
-  color: $light;
+  color: $dark;
 }
 
 /* A link that is hovered on */
 a:hover {
-  color: $dark;
+  color: $light;
 }
 
 /* A link that is selected */

@@ -26,10 +26,16 @@ class Gif extends Component {
   }
 
   render() {
-    const source = this.state.gifStatic ? this.props.static : this.props.vid
+    //const source = this.state.gifStatic ? this.props.static : this.props.vid
     return (
       <GifWrap onMouseEnter={this.handleGif} onMouseLeave={this.handleGif}>
-        <img src={source} alt={this.props.title}/>
+        {this.state.gifStatic ? (
+          <img src={this.props.static} alt={this.props.title} />
+        ) : (
+          <video loop controls muted>
+            <source src={this.props.vid} type="video/mp4" />
+          </video>
+        )}
         <div>
           <CardButton onClick={() => window.open(this.props.giturl, "_blank")}>
             <GoMarkGithub size={20} />
@@ -90,6 +96,13 @@ export const GifWrap = styled.div`
     display: flex;
   }
   img {
+    padding: 0;
+    margin: 0;
+    height: 315px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  video {
     padding: 0;
     margin: 0;
     height: 315px;
